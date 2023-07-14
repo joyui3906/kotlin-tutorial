@@ -1,0 +1,17 @@
+
+spring:
+  server:
+    port: 8080
+  lifecycle:
+    timeout-per-shutdown-phase: 30s
+  profiles:
+    include: domain
+
+swagger:
+  url: http://localhost:8080
+  domain: localhost:8080
+springfox:
+  documentation:
+    swagger:
+      use-model-v3: false
+
