@@ -62,7 +62,7 @@ class SwaggerConfig : WebMvcConfigurer {
         private get() = Arrays.asList<SecurityScheme>(ApiKey("Authorization", "Authorization", "header"))
     private val apiInfo: ApiInfo
         private get() {
-            val description = "<h1>REST API for GIGPL Admin</h1>" +
+            val description = "<h1>REST API </h1>" +
                     "<h3>인증방법</h3>" +
                     "<p> - 로그인 API로 토큰 발급</p>" +
                     "<p> - Authorize 버튼 클릭</p>" +
@@ -73,8 +73,8 @@ class SwaggerConfig : WebMvcConfigurer {
                 "GIGPL Admin API DOCUMENT",
                 description,
                 "1.0.0",
-                "https://gigplanner.com",
-                Contact("contact", "https://gigplanner.kr", "contact@gigplanner.kr"),
+                "https://없음.com",
+                Contact("contact", "https://없음.kr", "contact@없음.kr"),
                 "Apache 2.0",
                 "http://www.apache.org/licenses/LICENSE-2.0", emptyList()
             )
