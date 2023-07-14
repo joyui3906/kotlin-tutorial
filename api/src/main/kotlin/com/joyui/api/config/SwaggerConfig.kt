@@ -28,10 +28,10 @@ class SwaggerConfig : WebMvcConfigurer {
     @Bean
     fun docket(): Docket {
         return Docket(DocumentationType.SWAGGER_2)
-            .securityContexts(securityContextList)
-            .securitySchemes(securitySchemeList)
+            //.securityContexts(securityContextList)
+            //.securitySchemes(securitySchemeList)
             .select()
-            .apis(RequestHandlerSelectors.basePackage("com.joyui"))
+            .apis(RequestHandlerSelectors.basePackage("com.joyui.api"))
             .paths(PathSelectors.any())
             .build()
             .apiInfo(apiInfo)
