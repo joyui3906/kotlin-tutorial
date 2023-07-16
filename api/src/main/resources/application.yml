@@ -18,3 +18,7 @@ springfox:
     swagger:
       use-model-v3: false
 
+
+jwt:
+  secret: a290bGluLXR1dG9yaWFsLWp3dC1zZWNyZXQK #  echo 'kotlin-tutorial-jwt-secret' | base64
+  expiration: 43200000 # 12 * 60 * 60 * 1000L = 12 hours
